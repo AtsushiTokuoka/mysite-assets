@@ -1,0 +1,1 @@
+!function(){"use strict";window.addEventListener("load",(function(){const e=document.querySelector("#header");let t=e.offsetHeight,o=0;new ResizeObserver((o=>{for(const n of o)n.target===e&&(t=e.offsetHeight)})).observe(e),window.addEventListener("scroll",(()=>{const n=window.scrollY;e.style.top=n<o?"0":n>t?`-${t}px`:"0",o=n}))}))}();
